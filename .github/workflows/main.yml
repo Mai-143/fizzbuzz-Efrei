@@ -15,15 +15,4 @@ jobs:
 
       - name: Run tests inside Docker container
         run: docker run --rm fizzbuzz-app
-
-      - name: Generate and upload coverage report
-        run: |
-          docker run --rm fizzbuzz-app pytest --cov=. --cov-report=html
-          mkdir -p coverage-reports
-          docker cp $(docker create fizzbuzz-app):/app/htmlcov ./coverage-reports/
-
-      - name: Upload coverage artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: coverage-report
-          path: coverage-reports/
+  
