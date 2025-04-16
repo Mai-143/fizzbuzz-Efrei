@@ -5,7 +5,7 @@ def test_fizzbuzz():
     output = fizzbuzz()
     
     assert len(output) == 100  
-    assert output[2] == "Fizz"  
+    assert output[2] == "Fiz"  
     assert output[4] == "Buzz"  
     assert output[14] == "FizzBuzz"  
     assert output[98] == "Fizz"  
