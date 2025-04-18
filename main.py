@@ -1,6 +1,5 @@
-
 def fizzbuzz():
-    result = []  # Stocker les résultats au lieu d'imprimer
+    result = []
     for i in range(1, 101):
         if i % 3 == 0 and i % 5 == 0:
             result.append('FizzBuzz')
@@ -10,9 +9,9 @@ def fizzbuzz():
             result.append('Buzz')
         else:
             result.append(i)
-    return result  # Retourner la liste des résultats
+    return result 
 
 
 if __name__ == '__main__':
-    fizzbuzz()
+    print(fizzbuzz())
 
